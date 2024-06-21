@@ -1,11 +1,52 @@
-/* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --dracula-background: #282a36;
+  --dracula-foreground: #f8f8f2;
+  --dracula-comment: #6272a4;
+  --dracula-cyan: #8be9fd;
+  --dracula-green: #50fa7b;
+  --dracula-orange: #ffb86c;
+  --dracula-pink: #ff79c6;
+  --dracula-purple: #bd93f9;
+  --dracula-red: #ff5555;
+  --dracula-yellow: #f1fa8c;
+}
 
 body {
   font-family: 'Roboto', Arial, sans-serif;
   margin: 0;
-  background-color: #171717;
-  color: #ddd;
+  background-color: var(--dracula-background);
+  color: var(--dracula-foreground);
+}
+
+#wip-banner {
+  background-color: var(--dracula-pink);
+  color: var(--dracula-foreground);
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+  animation: slideDown 2s ease;
+}
+
+#wip-banner .sub-message {
+  font-size: 0.8em;
+  margin-top: 10px;
+  color: var(--dracula-foreground);
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .header {
@@ -16,23 +57,23 @@ body {
 .name {
   font-size: 3rem;
   font-weight: bold;
-  color: #fff;
-  text-shadow: 0 0 5px #00fff0;
+  color: var(--dracula-foreground);
+  text-shadow: 0 0 5px var(--dracula-cyan);
   animation: glow 1.5s infinite alternate;
 }
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 5px #00fff0, 0 0 10px #00fff0, 0 0 20px #00fff0, 0 0 40px #00fff0, 0 0 80px #00fff0;
+    text-shadow: 0 0 5px var(--dracula-cyan), 0 0 10px var(--dracula-cyan), 0 0 20px var(--dracula-cyan), 0 0 40px var(--dracula-cyan), 0 0 80px var(--dracula-cyan);
   }
   to {
-    text-shadow: 0 0 10px #00fff0, 0 0 20px #00fff0, 0 0 40px #00fff0, 0 0 80px #00fff0, 0 0 160px #00fff0;
+    text-shadow: 0 0 10px var(--dracula-cyan), 0 0 20px var(--dracula-cyan), 0 0 40px var(--dracula-cyan), 0 0 80px var(--dracula-cyan), 0 0 160px var(--dracula-cyan);
   }
 }
 
 .title {
   font-size: 1.5rem;
-  color: #aaa;
+  color: var(--dracula-comment);
 }
 
 .main {
@@ -46,8 +87,8 @@ body {
   margin: 1rem;
   padding: 1rem;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 10px rgba(0, 255, 240, 0.3);
+  background-color: var(--dracula-background);
+  box-shadow: 0 0 10px var(--dracula-cyan);
   transition: transform 0.3s;
 }
 
@@ -57,6 +98,7 @@ body {
 
 .about p, .connect p, .projects p {
   line-height: 1.5;
+  color: var(--dracula-foreground);
 }
 
 .social-links {
@@ -71,19 +113,19 @@ body {
 }
 
 .social-links a {
-  color: #00fff0;
+  color: var(--dracula-green);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .social-links a:hover {
-  color: #fff;
+  color: var(--dracula-foreground);
 }
 
 .footer {
   text-align: center;
   padding: 1rem;
-  color: #aaa;
+  color: var(--dracula-comment);
 }
 
 .project-list {
@@ -97,13 +139,13 @@ body {
 }
 
 .project-list a {
-  color: #00fff0;
+  color: var(--dracula-green);
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .project-list a:hover {
-  color: #fff;
+  color: var(--dracula-foreground);
 }
 
 /* Hide the projects section */
