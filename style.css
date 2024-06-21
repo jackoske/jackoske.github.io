@@ -1,0 +1,105 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #171717;
+  color: #ddd;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 5px #00fff0;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #00fff0, 0 0 10px #00fff0, 0 0 20px #00fff0, 0 0 40px #00fff0, 0 0 80px #00fff0;
+  }
+  to {
+    text-shadow: 0 0 10px #00fff0, 0 0 20px #00fff0, 0 0 40px #00fff0, 0 0 80px #00fff0, 0 0 160px #00fff0;
+  }
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #aaa;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.about, .connect, .projects {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 255, 240, 0.3);
+  transition: transform 0.3s;
+}
+
+.about:hover, .connect:hover, .projects:hover {
+  transform: scale(1.05);
+}
+
+.about p, .connect p, .projects p {
+  line-height: 1.5;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.social-links a {
+  color: #00fff0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  color: #aaa;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-list li {
+  margin-bottom: 1rem;
+}
+
+.project-list a {
+  color: #00fff0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.project-list a:hover {
+  color: #fff;
+}
+
