@@ -1,5 +1,8 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   margin: 0;
   background-color: #171717;
   color: #ddd;
@@ -103,3 +106,7 @@ body {
   color: #fff;
 }
 
+/* Hide the projects section */
+.projects {
+  display: none;
+}
