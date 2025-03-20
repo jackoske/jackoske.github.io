@@ -3,49 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jack Skehan | Tech Lover | Code Ninja | Gadget Geek</title>
+  <title>Jack Skehan | Developer | Tech Enthusiast</title>
+  
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap">
 </head>
 <body>
+  <canvas id="gradient-canvas"></canvas>
+  
   <div id="wip-banner">
     This site is a work in progress.
     <div class="sub-message">
-      I am busy making minishell and learning about embedded systems and electronics. it will be a true reflection of my skill soon
+      I am busy making creating webserv and learning about docker systems. Soon I will add projects I have worked on. Just keep swimming.
     </div>
   </div>
-    <header class="header">
-    <h1 class="name">Jack Skehan</h1>
-    
-    <h2 class="title">Tech Lover | Code Ninja | Gadget Geek</h2>
+
+  <nav class="navbar">
+    <div class="logo">JS</div>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#connect" class="nav-link">Connect</a>
+    </div>
+    <div class="menu-btn">
+      <div class="menu-btn__burger"></div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="glitch" data-text="Jack Skehan">Jack Skehan</h1>
+      <div class="hero-subtitle">
+        <span class="txt-rotate" data-period="2000" 
+              data-rotate='[ "Developer", "Tech Enthusiast", "Problem Solver" ]'></span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#connect" class="btn btn-secondary">Connect</a>
+      </div>
+    </div>
   </header>
 
   <main class="main">
-    <section class="about">
-      <h3>About Me</h3>
-      <p>I am a tech lover who enjoys crafting user-centric interfaces that are visually stunning and technologically innovative. With experience across various projects, I'm constantly seeking to push boundaries and embrace new frontiers in web development.</p>
-      <p>Beyond front-end, I tinker with AI, build cool web stuff, and dive into embedded systems. Obsessed with all things audio-visual, I'm always up for a challenge and exploring ways to integrate emerging technologies into my projects. Let's shape the future of tech together!</p>
+    <section id="about" class="about section">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I am a tech lover who enjoys crafting user-centric interfaces that are visually stunning and technologically innovative. With experience across various projects, I'm constantly seeking to push boundaries and embrace new frontiers in web development.</p>
+          <p>Beyond front-end, I tinker with AI, build cool web stuff, and dive into embedded systems. Obsessed with all things audio-visual, I'm always up for a challenge and exploring ways to integrate emerging technologies into my projects. Let's shape the future of tech together!</p>
+        </div>
+        <div class="skills">
+          <h3>Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Web Development</span>
+            <span class="skill-tag">Embedded Systems</span>
+            <span class="skill-tag">UI/UX Design</span>
+            <span class="skill-tag">Problem Solving</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="projects">
-      <h3>Projects</h3>
-      <ul class="project-list">
-        <!-- TODO: Add projects here -->
-      </ul>
+    <section id="projects" class="projects section">
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="projects-grid">
+        <!-- Placeholder for projects -->
+        <div class="project-card">
+          <div class="project-image placeholder-image"></div>
+          <div class="project-info">
+            <h3>Project One</h3>
+            <p>Coming soon...</p>
+            <div class="project-tags">
+              <span class="project-tag">Web</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image placeholder-image"></div>
+          <div class="project-info">
+            <h3>Project Two</h3>
+            <p>Coming soon...</p>
+            <div class="project-tags">
+              <span class="project-tag">Embedded</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="connect">
-      <h3>Connect With Me</h3>
-      <ul class="social-links">
-        <li><a href="https://www.linkedin.com/in/jack-skehan/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-        <li><a href="https://github.com/jackoske"><i class="fab fa-github"></i> GitHub</a></li>
-      </ul>
+    <section id="connect" class="connect section">
+      <div class="section-header">
+        <h2 class="section-title">Connect With Me</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="social-container">
+        <a href="https://www.linkedin.com/in/jack-skehan/" class="social-link" target="_blank">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/jackoske" class="social-link" target="_blank">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="mailto:contact@example.com" class="social-link">
+          <i class="fas fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
     <p>&copy; 2024 Jack Skehan</p>
+    <p class="footer-note">Built with <i class="fas fa-heart"></i> and modern web technologies</p>
   </footer>
+
+  <!-- Back to top button -->
+  <a href="#" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <script src="script.js"></script>
 </body>
 </html>
